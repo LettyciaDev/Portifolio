@@ -1,0 +1,125 @@
+body{
+    transition: all 0.3s ease-in-out;
+}
+:root{
+    font-family: "Viga", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+   --font1: "Viga", sans-serif ;
+   --cor0: #FB6204;
+   --cor1: #111;
+   --cor3: #1f2022 ;
+   --cor4: white;/*#89FFDB*/
+   --cor5: #20FF87;
+}
+.dark .bi-sun {
+    display: none;
+  }
+  
+  .dark .bi-moon {
+    display: block;
+  }
+.dark{
+    background: var(--cor3);
+}
+.dark header{
+  color: var(--cor5);
+}
+.dark .typing-effect{
+  color: var(--cor5);
+}
+.dark .navbar-container a{
+  color: var(--cor5);
+}
+.dark .navbar-container a:hover{
+  border-bottom: var(--cor5);
+}
+.dark .head{
+  box-shadow: 0 30px 50px var(--cor1);
+}
+.dark span{
+  text-shadow: 0 10px 35px var(--cor1);
+}
+.dark .small-text p{
+  color: #fff;
+}
+.dark .about{
+  background:#242527 ;
+  color: var(--cor5);
+}
+.dark .about-ttl{
+  text-shadow: 0 10px 30px var(--cor1);
+}
+.dark .about-socialmedia{
+  color: #fff;
+}
+.dark .fa-brands{
+  color: #fff;
+}
+.dark .linkedin, 
+.dark .insta,
+.dark .github{
+  background: #4e525f;
+  box-shadow: 0 30px 50px var(--cor1);
+}
+.dark .link a{
+  border: 2px solid var(--cor5);
+  color: #fff;
+}
+.dark .link a:hover{
+   background: var(--cor5);
+   color: var(--cor3);
+}
+.dark .skills{
+   color: var(--cor5);
+}
+.dark .skill-title{
+  text-shadow: 0 10px 30px var(--cor1);
+}
+.dark .skill-card{
+  background: #252830;
+  box-shadow: 0 30px 50px var(--cor1);
+}
+.dark .skill-porcent1::before{
+  background-color: #252830;
+}
+.dark .skill-porcent2::before{
+  background-color: #252830;
+}
+.dark .skill-porcent3::before{
+  background-color: #252830;
+}
+.dark .progress-value1,
+.dark .progress-value2,
+.dark .progress-value3{
+  color: var(--cor5);
+}
+.dark .projects-title{
+  color: var(--cor5);
+  text-shadow: 0 10px 30px var(--cor1);
+}
+.dark .container .slide .item{
+  box-shadow: 0 5px 10px var(--cor1);
+}
+.dark .link-github a{
+  background: var(--cor3);
+}
+.dark .link-github a:hover{
+  background: var(--cor5);
+  color: var(--cor3);
+}
+.dark .footer{
+  background-color: #242527;
+}
+.dark .pagina-container a{
+   color: var(--cor5);
+}
+.dark .social-media-container ul{
+  border-bottom: 1px solid var(--cor5);
+}
+.dark .social-media-container i{
+  color: var(--cor5);
+}
+.dark .copy p{
+   color: var(--cor5);
+}

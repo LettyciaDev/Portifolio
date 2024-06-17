@@ -1,0 +1,31 @@
+/* styles.css */
+
+.typing-effect {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #111; /* Cor do texto */
+    border-right: 2px solid #fff; /* Efeito de cursor */
+    white-space: nowrap; /* Impede quebrar linha */
+    overflow: hidden; /* Oculta texto que ultrapassa a largura do container */
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent; /* Faz o cursor piscar */
+    }
+    50% {
+      border-color: #fff; /* Mostra o cursor */
+    }
+  }
+  
