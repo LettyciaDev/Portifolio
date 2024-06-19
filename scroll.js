@@ -50,3 +50,15 @@ exibir.reveal('.container',
     distance: '90px'
 
 })
+exibir.reveal('.contact-title',
+{
+    duration: 1500,
+    distance: '90px'
+    
+})
+exibir.reveal('.forms',
+{
+    duration: 1500,
+    distance: '90px'
+        
+})

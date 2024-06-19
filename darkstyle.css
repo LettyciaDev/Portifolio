@@ -28,10 +28,10 @@ body{
 .dark .typing-effect{
   color: var(--cor5);
 }
-.dark .navbar-container a{
+.dark .navbar a{
   color: var(--cor5);
 }
-.dark .navbar-container a:hover{
+.dark .navbar a:hover{
   border-bottom: var(--cor5);
 }
 .dark .head{
@@ -122,4 +122,21 @@ body{
 }
 .dark .copy p{
    color: var(--cor5);
+}
+.dark .contact-title{
+  color: var(--cor5);
+}
+.dark .forms input{
+  background: var(--cor3);
+  border: 2px var(--cor5) solid;
+  color: var(--cor5);
+}
+.dark .forms textarea{
+  background: var(--cor3);
+  border: 2px var(--cor5) solid;
+  color: var(--cor5);
+}
+.dark .forms button{
+  background: var(--cor5);
+  color: var(--cor3);
 }

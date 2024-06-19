@@ -39,23 +39,22 @@ input[type="checkbox"] {
     display: none;
   }
 .navbar{
-    align-items: center;
     position: relative;
-    left: 50%;
-    width: 40%;
+    left: 40%;
+    width: 50%;
 }
-.navbar-container ul{
+.navbar ul{
     display: flex;
     justify-content: space-around;
 }
-.navbar-container li, a{
+.navbar li, a{
     color: var(--cor0);
     font-family: var(--font1);
     font-size: 25px;
     list-style: none;
     text-decoration: none;
 }
-.navbar-container a:hover{
+.navbar a:hover{
     border-bottom: 2px solid var(--cor0);
     font-size: 23px;
     transition: 0.3s;
@@ -196,10 +195,8 @@ span{
     background: #fffafa;
     color: var(--cor0);
     height: 100vh;
-    position: relative;
-}
-.about-container{
     margin-top: 10%;
+    position: relative;
 }
 .about-ttl{
     font-size: 20px;
@@ -209,7 +206,7 @@ span{
     text-shadow: 0 10px 30px #cac8c8;
     visibility: hidden;
 }
-.about-description{
+.about-container{
     display: flex;
     margin-left: 10%;
 }
@@ -310,23 +307,30 @@ span{
 .skills{
     color: var(--cor0);
     height: 100vh;
-    width: 90%;
+    width: 100%;
 }
 .skill-title{
     font-size: 25px;
-    margin: 10% 0 0 42%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
     text-shadow: 0 10px 30px #cac8c8;
 }
 .skills-cards{
+    align-items: center;
     display: flex;
-    justify-content: space-around;
-    margin: 10% 0 0 10%;
+    justify-content: center;
+   
 }
 .skill-card{
     border-radius: 14px;
     box-shadow: 0 30px 50px #dbdbdb;
     height: 48vh;
+    margin: 10% 4% 0 0;
     width: 38vh;
+}
+.skill-card:nth-child(3){
+    margin: 10% 0 0 0;
 }
 .skill-porcent1{
     align-items: center;
@@ -407,151 +411,36 @@ span{
     height: 100vh;
     position: relative;
 }
-.background{
-    height: 10%;
-    width: 50%;    
-}
-.background L{
-    background: linear-gradient(90deg, #ff3909, #ffad0e);
-    height: 10%;
-    width: 50%;     
-    left: 0;
-    top: 0;
-}
-.background R{
-    bottom: -100px;
-    height: 40vh;
-    right: 0;
-    position: absolute;
-    width: 40vh;
-}
 .projects-title{
+    display: flex;
+    justify-content: center;
     color: var(--cor0);
     font-size: 25px;
-    left: 45%;
-    position: absolute;
     text-shadow: 0 10px 30px #cac8c8;
-    top: 0;
 }
-.container{
-    border-radius: 10px;
-    height: 75%;
-    left: 50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 70%;
-}
-.container .slide .item{
-    border-radius: 20px;
+.swiper-slide.swiper-slide-active{
     box-shadow: 0 5px 10px #505050;
-    background-position: 50% 50%;
-    background-size: cover;
-    display: inline-block;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    transition: 0.5s;
-    width: 200px;
+    height: 200px;
+    width: 300px;
 }
-.slide .item:nth-child(1),
-.slide .item:nth-child(2){
-    border-radius: 10px;
+
+.mySwiper{
     height: 100%;
-    left: 0;
-    transform: translate(0, 0);
-    top: 0;
+    width: 100%;
+   
+}
+.slide{
+    border: 1px solid #505050;
+    border-radius: 18px;
+    height: 100%;
     width: 100%;
 }
-.slide .item:nth-child(3){
-    left: 50%;
-}
-.slide .item:nth-child(4){
-    left: calc(50% + 220px);
-}
-.slide .item:nth-child(5){
-    left: calc(50% + 440px);
-}
-.slide .item:nth-child(n + 6){
-    left: calc(50% + 660px);
-    opacity: 0;
-}
-
-
-
-.item .content{
-    color: #fff;
-    display: none;
-    font-family: system-ui;
-    left: 100px;
-    position: absolute;
-    text-align: left;
-    transform: translate(0, -50%);
-    top: 50%;
-    width: 500px;
-    
-}
-
-
-.slide .item:nth-child(2) .content{
-    display: block;
-}
-
-
-.content .name{
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: bold;
-    opacity: 0;
-    animation: animate 1s ease-in-out 1 forwards;
-}
-
-.content .des{
-    font-size: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    opacity: 0;
-    animation: animate 1s ease-in-out 0.3s 1 forwards;
-}
-
-.content button{
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    opacity: 0;
-    animation: animate 1s ease-in-out 0.6s 1 forwards;
-}
-@keyframes animate {
-    from{
-        opacity: 0;
-        transform: translate(0, 100px);
-        filter: blur(33px);
-    }
-
-    to{
-        opacity: 1;
-        transform: translate(0);
-        filter: blur(0);
-    }
-}
-.button{
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    bottom: 20px;
-}
-
-.button button{
-    width: 40px;
-    height: 40px;
-    background: #fff;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: 0.3s;
-}
+.slide-img{
+    border-radius: 18px;
+    height: 80%;
+    margin: 2% 5% 0 5%;
+    width: 90%;
+}    
 .link-github a{
     align-items: center;
     background: #fff;
@@ -567,40 +456,46 @@ span{
     color: #fff;
     transition: 0.5s;
 }
-.contact-container{
-    align-items: center;
+
+.contact-title{
+    color: var(--cor0);
+    display: flex;
+    font-size: 40px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.forms{
     display: flex;
     justify-content: center;
 }
-.contact-title{
-    margin-bottom: 20px;
-}
-.forms{
-    background: var(--cor0);
-    border-radius: 8px;
-    box-shadow: 0 5px 10px #505050;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    padding: 25px;
-    text-shadow: 0 5px 10px #505050;
-    width: 40vh;
-}
-.email-img img{
-    height: 100px;
-    width: 100px;
-}
+
 .forms input, textarea{
-    border-radius: 12px;
+    border-radius: 8px;
+    border: 2px var(--cor0) solid;
+    color: var(--cor0);
+    display: block;
+    font-size: 24px;
+    padding: 15px;
+    margin: 20px;
+    width: 70vh;
+}
+.forms textarea{
+    height: 55%;
+}
+.forms button{
+    background: var(--cor0);
     border: none;
-    font-size: 15px;
-    padding: 10px;
-    margin-bottom: 10px;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 20px;
+    font-family: var(--font1);
+    padding: 20px;
+    margin-left: 3%;
 }
 .footer{
     background: #fffafa;
     display: flex;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 .footer-container{
     height: 50vh;
