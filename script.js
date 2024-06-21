@@ -122,22 +122,3 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
   //slider responsivo
 
-  var swiper = new Swiper('.mySwiper', {
-    // Parâmetros de configuração principais
-    slidesPerView: 'auto', // Quantidade de slides visíveis ao mesmo tempo
-    spaceBetween: 20, // Espaçamento entre os slides
-    // Opções de responsividade
-    breakpoints: {
-        // Quando a largura da tela for maior que 768px
-        768: {
-            slidesPerView: 2,
-            spaceBetween: 30
-        },
-        // Quando a largura da tela for maior que 1024px
-        1024: {
-            slidesPerView: 4,
-            spaceBetween: 40
-        }
-        // Adicione mais breakpoints conforme necessário
-    }
-});

@@ -98,15 +98,14 @@ body{
   color: var(--cor5);
   text-shadow: 0 10px 30px var(--cor1);
 }
-.dark .container .slide .item{
+.dark .slide{
   box-shadow: 0 5px 10px var(--cor1);
 }
-.dark .link-github a{
-  background: var(--cor3);
+.dark .link-github{
+  border: 1px solid var(--cor5);
 }
-.dark .link-github a:hover{
-  background: var(--cor5);
-  color: var(--cor3);
+.dark .link-github .fa-brands, a{
+  color: var(--cor5);
 }
 .dark .footer{
   background-color: #242527;

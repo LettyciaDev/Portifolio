@@ -1,90 +1,38 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de Swiper.js com Botões</title>
-    
-    <!-- Incluindo o CSS do Swiper -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    
-    <!-- Estilos CSS personalizados (opcional) -->
-    <style>
-        .swiper-container {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        .swiper-slide {
-            background-color: #f2f2f2;
-            border: 1px solid #ddd;
-            text-align: center;
-            padding: 50px 0;
-            font-size: 30px;
-        }
-        .swiper-button-prev,
-        .swiper-button-next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 30px;
-            height: 30px;
-            background-color: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 30px;
-            font-size: 20px;
-            cursor: pointer;
-            z-index: 10;
-        }
-        .swiper-button-prev {
-            left: 10px;
-        }
-        .swiper-button-next {
-            right: 10px;
-        }
-    </style>
-</head>
-<body>
-    
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-        </div>
-
-        <!-- Botões de Navegação -->
-        <div class="swiper-button-prev">←</div>
-        <div class="swiper-button-next">→</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
     </div>
 
-    <!-- Incluindo o JavaScript do Swiper -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Botões de Navegação -->
+    <div class="swiper-button-prev">←</div>
+    <div class="swiper-button-next">→</div>
+</div>
 
-    <!-- Script para inicializar o Swiper -->
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-            slidesPerView: 'auto',
-            spaceBetween: 20,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+<!-- Incluindo o JavaScript do Swiper -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Script para inicializar o Swiper -->
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30
             },
-            breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                    spaceBetween: 30
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 40
-                }
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40
             }
-        });
-    </script>
-</body>
-</html>
+        }
+    });
+</script>

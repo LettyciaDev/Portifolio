@@ -408,7 +408,6 @@ span{
     margin-left: 35%;
 }
 .projects{
-    height: 100vh;
     position: relative;
 }
 .projects-title{
@@ -418,45 +417,57 @@ span{
     font-size: 25px;
     text-shadow: 0 10px 30px #cac8c8;
 }
-.swiper-container{
-    height: 60%;
-    width: 100%;
-    margin-left: 10%;
-   
+.slider-container{
+    height: 100vh;
+    width: 90%; 
+    margin: 4% 10%; /* Centraliza o container na página */
 }
-.swiper-slide{
-    border: 1px solid #505050;
-    border-radius: 18px;
-    height: 100%;
-    width: 100%;
+.slider-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap:1%;
 }
-.slide-des{
-    border-radius: 18px;
-    color: #fff;
-    height: 70%;
+.slide{
+    border-radius: 20px;
+    box-shadow: 0 5px 10px #505050;
+    width: 50vh;
+    height: 38vh;
+    margin: 5% 5% 0 0;
+    position: relative;
+}
+.slide-img img{
+    border-radius: 20px;
+    height: 80%;
     margin: 2% 5% 0 5%;
     width: 90%;
 } 
-.slide-des h1{
-    padding: 40% 0 0 5%;
-}
-.slide-des p{
-    padding-left: 5%;
+.slide-des{
+    bottom: 40%;
+    color: #fff;
+    left: 10%;
+    position: absolute;
+    width: 80%;
 }   
-.link-github a{
+.link-github{
     border: 1px solid var(--cor0);
     border-radius: 25px;
-    height: 30px;
-    padding: 10px;
-    margin: 30% 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
     width: 120px;
+    margin: 5% 0 0 35%;
 }
-.link-github a:hover{
-    background: var(--cor0);
-    color: #fff;
-    transition: 0.5s;
+.link-github .fa-brands{
+    color: var(--cor0);
+    font-size: 25px;
+    height: 25px;
+    width: 25px;
+    margin: 0;
 }
-
+.link-github {
+    font-size: 22px ;
+}
 .contact-title{
     color: var(--cor0);
     display: flex;
@@ -468,15 +479,14 @@ span{
     display: flex;
     justify-content: center;
 }
-
 .forms input, textarea{
     border-radius: 8px;
     border: 2px var(--cor0) solid;
     color: var(--cor0);
     display: block;
     font-size: 24px;
-    padding: 15px;
-    margin: 20px;
+    padding: 4%;
+    margin: 5%;
     width: 70vh;
 }
 .forms textarea{

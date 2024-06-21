@@ -1,3 +1,23 @@
+/*Extra small (xs): smartphone (portrait)*/
+@media(min-width: 0px){
+
+}
+/*small (sm): smartphone (landscape)*/
+@media (min-width: 576px){
+
+}
+/*medium (md): tablet*/
+@media (min-width:768px){
+
+}
+/*large (lg): notebook*/
+@media (min-width:992px){
+    
+}
+/*extra large (xl): desktop*/
+@media (min-width:1200px){
+    
+}
 @media screen and (max-width: 1020px){
     .navbar{
         display: none;
