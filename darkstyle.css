@@ -14,16 +14,24 @@ body{
 }
 .dark .bi-sun {
     display: none;
-  }
-  
-  .dark .bi-moon {
+} 
+.dark .bi-moon {
     display: block;
-  }
+}
 .dark{
     background: var(--cor3);
 }
 .dark header{
   color: var(--cor5);
+}
+.dark #hamburguer{
+  border-top: 5px solid var(--cor5);
+}
+.dark #hamburguer::before, .dark #hamburguer::after{
+  background: var(--cor5);
+}
+.dark .navbar{
+  background: var(--cor3);
 }
 .dark .typing-effect{
   color: var(--cor5);
@@ -104,7 +112,7 @@ body{
 .dark .link-github{
   border: 1px solid var(--cor5);
 }
-.dark .link-github .fa-brands, a{
+.dark .link-github .fa-brands a{
   color: var(--cor5);
 }
 .dark .footer{

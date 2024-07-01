@@ -1,26 +1,25 @@
-/*Extra small (xs): smartphone (portrait)*/
-@media(min-width: 0px){
-
-}
 /*small (sm): smartphone (landscape)*/
-@media (min-width: 576px){
+@media(max-width:576px){
+    *, .contact-title{
+        font-size: 18px;
+    }
+     .bi { 
+        font-size: 30px;
+    }
 
-}
-/*medium (md): tablet*/
-@media (min-width:768px){
-
-}
-/*large (lg): notebook*/
-@media (min-width:992px){
-    
-}
-/*extra large (xl): desktop*/
-@media (min-width:1200px){
-    
-}
-@media screen and (max-width: 1020px){
-    .navbar{
-        display: none;
+    .head{
+        padding: 30px 0 50px 0;
+    }
+    .small-text p{
+        font-size: 14px;
+        margin: 1% 0 0 15%;
+        width: 90%;
+    }
+    .big-text{
+        margin: 20px 0px 0px 15%;
+    }
+    .typing-effect{
+        font-size: 18px;
     }
     .coding-circles ul{
         width: 30%;
@@ -29,22 +28,16 @@
         height: 20px;
         width: 20px;
     }
-    .typing-effect{
-        font-size: 24px;
-    }
-    .about{
-        height: auto;
-    }
-    .about-container{
-        display: block;
+    #line li{
+        height: 15px;
     }
     .social-media{
-        height: 120px;
-        width: 220px;
+        height: 110px;
+        width: 210px;
     }
     .social-circles{
         height: 10px;
-        left: 150px;
+        left: 135px;
         width: 10px;
     }
     .social-circles::before{
@@ -56,68 +49,428 @@
         width: 10px;
     }
     .fa-brands{
-        font-size: 60px;
-        height: 60px;
-        margin: 0 0 0 20px;
-        width: 60px;
+        font-size: 50px;
+        margin: 0 5px 0 20px;
+        height: 50px;
+        width: 50px;
     }
     .linkedin{
-        top: 5vh;
+        top: 5%;
     }
     .insta{
-        left: 45vh;
-        top: 20vh;
+        left: 40%;
+        top: 20%;
     }
     .github{
-        top: 40vh;
+        top: 40%;
+    }
+    .link a{
+        font-size: 10px;
+        width: 100%;
+    }
+    .about{
+        height: auto;
     }
     .about-ttl{
-        left: 40%;
-        top: 50%;
+        left: 35%;
+        top: 60%;
     }
     .about-txt{
-        font-size: 25px;
-        margin: 70vh 0 0 10%;
+        margin: 150% 0 0 5%;
         padding-bottom: 5%;
+        width: 90%;
+    }
+    .skills{
+        height: 120vh;
+    }
+    .skills-container{
+        width: 90%;
+        height: 100%;
+    }
+    .skills-cards{ 
+        display: grid;
+        height: 100vh;
+    }
+    .skill-card{
+        height: 30vh;
+        width: 200px;
+    }
+    .skill-porcent1,
+    .skill-porcent2,
+    .skill-porcent3{
+        display: flex;
+        align-content: center;
+        height: 50%;
+        width: 70%;
+    }
+    .skill-porcent1::before,
+    .skill-porcent2::before,
+    .skill-porcent3::before{
+        height: 50%;
+        width: 50%;
+    }
+    .progress-value1,
+    .progress-value2,
+    .progress-value3{
+        font-size: 20px;
+    }
+    
+    .slider-container{
+        height: auto;
+        margin: 4%;
+        width: auto;
+    }
+    .slider-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .slide{
+        height: 100%;
+        width: 70%;
+    }
+    .contact-container{
+        display: block;
+    }
+    .forms input, textarea{
+        width: 70%;
+    }
+    .forms button{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .footer{
+        margin-top: 50%;
+    }
+    .pagina-container ul{
+        display: flex;
+    }
+    .pagina-container a{
+        font-size: 16px;
+    }
+
+}
+/*medium (md): tablet*/
+@media (max-width: 768px){
+    .bi { 
+        font-size: 30px;
+    }
+
+    .head{
+        padding: 30px 0 50px 0;
+    }
+    .small-text p{
+        font-size: 14px;
+        margin: 1% 0 0 15%;
+        width: 90%;
+    }
+    .big-text{
+        margin: 20px 0px 0px 15%;
+    }
+    .typing-effect{
+        font-size: 20px;
+    }
+    .coding-circles ul{
+        width: 30%;
+    }
+    .coding-circles li{
+        height: 20px;
+        width: 20px;
+    }
+    #line li{
+        height: 15px;
+    }
+    .social-media{
+        height: 110px;
+        width: 210px;
+    }
+    .social-circles{
+        height: 10px;
+        left: 135px;
+        width: 10px;
+    }
+    .social-circles::before{
+        height: 10px;
+        width: 10px;
+    }
+    .social-circles::after{
+        height: 10px;
+        width: 10px;
+    }
+    .fa-brands{
+        font-size: 50px;
+        margin: 0 5px 0 20px;
+        height: 50px;
+        width: 50px;
+    }
+    .linkedin{
+        top: 5%;
+    }
+    .insta{
+        left: 30%;
+        top: 20%;
+    }
+    .github{
+        top: 40%;
+    }
+    .link a{
+        font-size: 10px;
+        width: 100%;
+    }
+    .about-ttl{
+        font-size: 18px;
+        left: 35%;
+        top: 60%;
+    }
+    .about-txt{
+        font-size: 20px;
+        margin: 150% 0 0 5%;
+        padding-bottom: 5%;
+        width: 90%;
     }
     .skills{
         height: auto;
     }
-    .skills-cards{
-        flex-direction: column;
+    .skills-container{
+        width: 100%;
+        height: 100%;
     }
-    .projects-title{
+    .skill-title, .contact-title, .projects-title{
+        font-size: 20px;
+    }
+    .skills-cards{ 
+        display: block;
+        margin: 0 15%;
+    }
+    .projects{
         margin-top: 40%;
     }
-    .container{
-        top: 55%;
-        left: 35vh;
+    .slider-container{
+        height: auto;
+        margin: 15%;
     }
-    .container .slide .item{
-        height: 20%;
-        width: 15%;
+    .slider-wrapper{
+        grid-template-columns: 1fr;
     }
-    .slide .item:nth-child(1),
-    .slide .item:nth-child(2){
-        border-radius: 10px;
+    .slide{
         height: 100%;
-        left: 0;
-        transform: translate(0, 0);
-        top: 0;
+        width: 80%;
+    }
+    .contact-container{
+        margin-top: 30%;
+    }
+    .contact-title{
+        font-size: 30px;
+    }
+    .forms input, textarea{
+        width: 40vh;
+        margin: 5% 0;
+    }
+    .forms button{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .footer{
+        margin-top: 50%;
+    }
+    .pagina-container li{
+        margin-right: 30px;
+    }
+    .pagina-container a{
+        font-size: 20px;
+    }
+}
+/*large (lg): notebook*/
+@media (max-width: 992px){
+    .bi { 
+        font-size: 30px;
+    }
+
+    .head{
+        padding: 30px 0 50px 0;
+    }
+    .small-text p{
+        font-size: 14px;
+        margin: 1% 0 0 15%;
+        width: 90%;
+    }
+    .big-text{
+        margin: 20px 0px 0px 15%;
+    }
+    .typing-effect{
+        font-size: 20px;
+    }
+    .coding-circles ul{
+        width: 30%;
+    }
+    .coding-circles li{
+        height: 20px;
+        width: 20px;
+    }
+    #line li{
+        height: 15px;
+    }
+    .social-media{
+        height: 110px;
+        width: 210px;
+    }
+    .social-circles{
+        height: 10px;
+        left: 135px;
+        width: 10px;
+    }
+    .social-circles::before{
+        height: 10px;
+        width: 10px;
+    }
+    .social-circles::after{
+        height: 10px;
+        width: 10px;
+    }
+    .fa-brands{
+        font-size: 50px;
+        margin: 0 5px 0 20px;
+        height: 50px;
+        width: 50px;
+    }
+    .linkedin{
+        top: 5%;
+    }
+    .insta{
+        left: 30%;
+        top: 20%;
+    }
+    .github{
+        top: 40%;
+    }
+    .link a{
+        font-size: 10px;
         width: 100%;
     }
-    .slide .item:nth-child(3){
-        left: 50%;
+    .about-ttl{
+        font-size: 18px;
+        left: 35%;
+        top: 60%;
     }
-    .slide .item:nth-child(4){
-        left: calc(50% + 40%);
+    .about-txt{
+        font-size: 20px;
+        margin: 150% 0 0 5%;
+        padding-bottom: 5%;
+        width: 90%;
     }
-    .slide .item:nth-child(5){
-        left: 50%;
+    .skills{
+        height: auto;
     }
-    .slide .item:nth-child(n + 6){
-        left: 50%;
-        opacity: 0;
+    .skills-container{
+        width: 100%;
+        height: 100%;
+    }
+    .skill-title, .contact-title, .projects-title{
+        font-size: 20px;
+    }
+    .skills-cards{ 
+        display: block;
+        margin: 0 15%;
+    }
+    .projects{
+        margin-top: 40%;
+    }
+    .slider-container{
+        height: auto;
+        margin: 15%;
+    }
+    .slider-wrapper{
+        grid-template-columns: 1fr;
+    }
+    .slide{
+        height: 100%;
+        width: 80%;
+    }
+    .contact-container{
+        margin-top: 30%;
+    }
+    .contact-title{
+        font-size: 30px;
+    }
+    .forms input, textarea{
+        width: 40vh;
+        margin: 5% 0;
+    }
+    .forms button{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .footer{
+        margin-top: 50%;
+    }
+    .pagina-container li{
+        margin-right: 30px;
+    }
+    .pagina-container a{
+        font-size: 20px;
+    }
+}
+/*extra large (xl): desktop*/
+@media screen and (max-width: 1020px){
+    #btn-mobile{
+        background: none;
+        display: flex;
+        border: none;
+        padding: 5%;
+        position: absolute;
+        right: 5%;
+        top: 2%;
+        z-index: 1000;
+    }
+    #hamburguer{
+        border-top: 5px solid #FB6204;
+        border-radius: 2px;
+        width: 40px;
+    }
+    #hamburguer::before, #hamburguer::after{
+        background: #FB6204;
+        border-radius: 8px;
+        content: " ";
+        display: block;
+        height: 5px;
+        margin-top: 5px;
+        width: 40px;
+        position: relative;
+        transition: 0.3s;
+    }
+    #nav.active #hamburguer {
+        border-top-color: transparent;
+      }
+      #nav.active #hamburguer::before {
+        transform: rotate(135deg);
+      }
+      #nav.active #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -10px;
+      }
+    .navbar{
+        display: none;
+        background: #fff;
+        width: 100%;
+        height: 100vh;
+        left: 0;
+        padding-left: 10%;
+        position: absolute;
+        transition: .6s;
+        top: 16%;
+        z-index: 1000;
+    }
+    .navbar ul, li{
+        display: block;
+        padding-bottom: 5%;
+    }
+    #nav.active .navbar{
+        display: block;
+    }
+    .theme{
+        top: 5%;
+        left: 15%;
+    }
+    main{
+        margin-top: 20vh;
     }
 
     

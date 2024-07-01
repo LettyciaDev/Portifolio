@@ -37,7 +37,10 @@ input[type="checkbox"] {
   
 .bi-moon {
     display: none;
-  }
+}
+#btn-mobile{
+    display: none;
+}
 .navbar{
     position: relative;
     left: 40%;
@@ -50,7 +53,7 @@ input[type="checkbox"] {
 .navbar li, a{
     color: var(--cor0);
     font-family: var(--font1);
-    font-size: 25px;
+    font-size: 28px;
     list-style: none;
     text-decoration: none;
 }
@@ -62,9 +65,9 @@ input[type="checkbox"] {
 .head{
     border-radius: 12px;
     box-shadow: 0 30px 50px #dbdbdb;
-    margin: 7% 0 0 15%;
-    padding: 40px 0 100px 0;
-    width: 70%;
+    margin: 7% 0 0 20%;
+    padding: 40px 0 5% 0;
+    width: 60%;
 }
 .head-container{
     display: flex;
@@ -118,7 +121,7 @@ span{
     position: relative;
 }
   .typing-effect {
-    font-family: "Viga", sans-serif;
+    font-family: var(--font1);
     font-size: 50px;
     color: var(--cor0); /* Cor do texto */
     white-space: nowrap; /* Impede quebrar linha */
@@ -137,11 +140,9 @@ span{
   
 .small-text p{
     color: #010817;
-    font-size: 22px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: weight;
-    font-style: normal;
-    margin: 2% 0 0 18%;
+    font-size: 26px;
+    font-family: var(--font1);
+    margin: 5% 0 0 16%;
 }
 .coding-lines{
     margin: 8% 0 0 10%;
@@ -152,7 +153,7 @@ span{
 }
 #line li{
     border-radius: 20px;
-    height: 20px;
+    height: 25px;
     list-style: none;
     margin: 0px 25px 20px 0;
 }
@@ -163,7 +164,6 @@ span{
     background-color: #7ED957;
     box-shadow: inset 0 0 10px #7ED957,  0 0 10px #7ED957 ;
     width: 50%;
-
 }
 .lines li:nth-child(2){
     background-color: #5ce1e6;
@@ -199,7 +199,7 @@ span{
     position: relative;
 }
 .about-ttl{
-    font-size: 20px;
+    font-size: 30px;
     left: 53%;
     position: absolute;
     top: 15%;
@@ -300,7 +300,7 @@ span{
 
 .about-txt{
     font-family: var(--font1);
-    font-size: 28px;
+    font-size: 34px;
     margin: 18% 0 0 48%;
     width: 35%;
 }
@@ -319,8 +319,7 @@ span{
 .skills-cards{
     align-items: center;
     display: flex;
-    justify-content: center;
-   
+    justify-content: center;  
 }
 .skill-card{
     border-radius: 14px;
@@ -332,46 +331,8 @@ span{
 .skill-card:nth-child(3){
     margin: 10% 0 0 0;
 }
-.skill-porcent1{
-    align-items: center;
-    background: conic-gradient(#20FF87 3.6deg, #ededed 0deg);
-    border-radius: 50%;
-    box-shadow: 0 0 5px #505050;
-    display: flex;
-    height: 30vh;
-    justify-content: center;
-    margin: 10%;
-    position: relative;
-    width: 30vh;
-}
-.skill-porcent1::before{
-    background-color: #fff;
-    border-radius: 50%;
-    content: " ";
-    height: 20vh;
-    position: absolute;
-    width: 20vh;
-}
-.skill-porcent2{
-    align-items: center;
-    background: conic-gradient(#20FF87 3.6deg, #ededed 0deg);
-    box-shadow: 0 0 5px #505050;
-    border-radius: 50%;
-    display: flex;
-    height: 30vh;
-    justify-content: center;
-    margin: 10%;
-    position: relative;
-    width: 30vh;
-}
-.skill-porcent2::before{
-    background-color: #fff;
-    border-radius: 50%;
-    content: " ";
-    height: 20vh;
-    position: absolute;
-    width: 20vh;
-}
+.skill-porcent1,
+.skill-porcent2,
 .skill-porcent3{
     align-items: center;
     background: conic-gradient(#20FF87 3.6deg, #ededed 0deg);
@@ -384,6 +345,8 @@ span{
     position: relative;
     width: 30vh;
 }
+.skill-porcent1::before,
+.skill-porcent2::before,
 .skill-porcent3::before{
     background-color: #fff;
     border-radius: 50%;
@@ -423,9 +386,9 @@ span{
     margin: 4% 10%; /* Centraliza o container na página */
 }
 .slider-wrapper{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap:1%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Inicialmente 3 colunas */
+    grid-gap: 20px;;
 }
 .slide{
     border-radius: 20px;
