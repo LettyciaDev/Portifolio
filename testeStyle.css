@@ -12,11 +12,14 @@ body{
      font-style: normal;
     --font1: "Viga", sans-serif ;
     --cor0: #FB6204;
-    --cor1: #111;
+    --cor1: #5CE1E6;
     --cor2: #20FF87;
     --cor3: #010817 ;
     --cor4: white;
-    --cor6: #1f2022 ;
+    --cor5: #89FFDB;
+}
+a{
+    text-decoration: none;
 }
 header{
     color: var(--cor0);
@@ -34,7 +37,7 @@ input[type="checkbox"] {
     font-size: 40px;
     cursor: pointer;
   }
-  
+
 .bi-moon {
     display: none;
 }
@@ -50,12 +53,13 @@ input[type="checkbox"] {
     display: flex;
     justify-content: space-around;
 }
-.navbar li, a{
+.navbar li{
+    list-style: none;
+}
+.navbar a{
     color: var(--cor0);
     font-family: var(--font1);
-    font-size: 28px;
-    list-style: none;
-    text-decoration: none;
+    font-size: 3vh;    
 }
 .navbar a:hover{
     border-bottom: 2px solid var(--cor0);
@@ -122,13 +126,13 @@ span{
 }
   .typing-effect {
     font-family: var(--font1);
-    font-size: 50px;
+    font-size: 28px;
     color: var(--cor0); /* Cor do texto */
     white-space: nowrap; /* Impede quebrar linha */
     overflow: hidden; /* Oculta texto que ultrapassa a largura do container */
     animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
   }
-  
+
   @keyframes typing {
     from {
       width: 0;
@@ -137,10 +141,10 @@ span{
       width: 100%;
     }
   }
-  
+
 .small-text p{
     color: #010817;
-    font-size: 26px;
+    font-size: 20px;
     font-family: var(--font1);
     margin: 5% 0 0 16%;
 }
@@ -199,7 +203,7 @@ span{
     position: relative;
 }
 .about-ttl{
-    font-size: 30px;
+    font-size: 20px;
     left: 53%;
     position: absolute;
     top: 15%;
@@ -218,9 +222,9 @@ span{
     align-items: center;
     border-radius: 10px;
     display: flex;
-    height: 150px;
+    height: 20vh;
     visibility: hidden;
-    width: 300px;
+    width: 35vh;
 }
 .social-media-circles{
     position: relative;
@@ -230,37 +234,37 @@ span{
     border-radius: 50%;
     bottom: 40px;
     display: flex;
-    height: 20px;
-    left: 200px;
+    height: 2vh;
+    left: 22vh;
     position: absolute;
-    width: 20px;
+    width: 2vh;
 }
 .social-circles::before{
     background: #7ED957;
     border-radius: 50%;
     content: " ";
     display: flex;
-    height: 20px;
-    left: 25px;
+    height: 2vh;
+    left: 4vh;
     position: absolute;
-    width: 20px;
+    width: 2vh;
 }
 .social-circles::after{
     background: #FFDE59;
     border-radius: 50%;
     content: " ";
     display: flex;
-    height: 20px;
-    left: 50px;
+    height: 2vh;
+    left: 8vh;
     position: absolute;
-    width: 20px;
+    width: 2vh;
 }
 .fa-brands{
     color: #111;
-    font-size: 80px;
-    height: 100px;
-    margin: 20px 0 0 20px;
-    width: 100px;
+    font-size: 70px;
+    height: 70px;
+    margin: 0 0 0 20px;
+    width: 70px;
 }
 .linkedin{
     box-shadow: inset 0 0 10px #8C52FF, 0 20px 30px #cac8c8;
@@ -269,7 +273,7 @@ span{
 }
 .insta{
     box-shadow: inset 0 0 10px #7ED957, 0 20px 30px #cac8c8;
-    left: 300px;
+    left: 30vh;
     position: absolute;
     top: 45%;
 }
@@ -285,9 +289,8 @@ span{
     border: 2px solid var(--cor0);
     border-radius: 20px;
     color: #000;
-    font-size: 12px;
+    font-size: 10px;
     padding: 4px;
-
 }
 .link a:hover{
     background: var(--cor0);
@@ -300,7 +303,7 @@ span{
 
 .about-txt{
     font-family: var(--font1);
-    font-size: 34px;
+    font-size: 20px;
     margin: 18% 0 0 48%;
     width: 35%;
 }
@@ -310,7 +313,7 @@ span{
     width: 100%;
 }
 .skill-title{
-    font-size: 25px;
+    font-size: 24px;
     display: flex;
     justify-content: center;
     margin-top: 5%;
@@ -355,20 +358,16 @@ span{
     position: absolute;
     width: 20vh;
 }
-.progress-value1{
-    color: #010817;
-    position: relative;
-}
-.progress-value2{
-    color: #010817;
-    position: relative;
-}
+.progress-value1,
+.progress-value2,
 .progress-value3{
     color: #010817;
+    font-size: 40px;
     position: relative;
 }
 .title-card h1{
-    margin-left: 35%;
+    font-size: 20px;
+    margin-left: 30%;
 }
 .projects{
     position: relative;
@@ -377,18 +376,18 @@ span{
     display: flex;
     justify-content: center;
     color: var(--cor0);
-    font-size: 25px;
+    font-size: 24px;
     text-shadow: 0 10px 30px #cac8c8;
 }
 .slider-container{
     height: 100vh;
     width: 90%; 
-    margin: 4% 10%; /* Centraliza o container na página */
+    margin: 4% 5%; /* Centraliza o container na página */
 }
 .slider-wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Inicialmente 3 colunas */
-    grid-gap: 20px;;
+    grid-template-columns: 1fr 1fr 1fr ; /* Inicialmente 3 colunas */
+    grid-gap: 5%;
 }
 .slide{
     border-radius: 20px;
@@ -410,7 +409,10 @@ span{
     left: 10%;
     position: absolute;
     width: 80%;
-}   
+} 
+.slide-des h1, .slide-des p{
+    font-size: 14px;
+}  
 .link-github{
     border: 1px solid var(--cor0);
     border-radius: 25px;
@@ -426,15 +428,15 @@ span{
     font-size: 25px;
     height: 25px;
     width: 25px;
-    margin: 0;
 }
-.link-github {
-    font-size: 22px ;
+.link-github a{
+    margin-right: 5px;
+    color: var(--cor0);
 }
 .contact-title{
     color: var(--cor0);
     display: flex;
-    font-size: 40px;
+    font-size: 24px;
     justify-content: center;
     margin-bottom: 30px;
 }
@@ -447,7 +449,7 @@ span{
     border: 2px var(--cor0) solid;
     color: var(--cor0);
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     padding: 4%;
     margin: 5%;
     width: 70vh;
@@ -460,7 +462,7 @@ span{
     border: none;
     border-radius: 12px;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
     font-family: var(--font1);
     padding: 20px;
     margin-left: 3%;
@@ -485,7 +487,8 @@ span{
     margin-right: 50px;
 }
 .pagina-container a{
-    font-size: 25px;
+    font-size: 18px;
+    color: var(--cor0);
 }
 .social-media-container ul{
     align-items: center;
@@ -499,7 +502,7 @@ span{
 }
 .social-media-container i{
     color: var(--cor0);
-    font-size: 50px;
+    font-size: 40px;
 }
 .copy p{
     color: var(--cor0);

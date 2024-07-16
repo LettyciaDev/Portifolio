@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"/>
     <!--CSS-->
-    <link rel="stylesheet" href="mobileStyle.css">
-    <link rel="stylesheet" href="darkstyle.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="darkstyle.css">
+    <link rel="stylesheet" href="mobileStyle.css">
     <!------->
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,17 +21,18 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scroll.js" defer></script>
     <!----------------->
+   
     <title>Portifólio</title>
 </head>
 <body>
     <header> 
-        <input type="checkbox" name="change-theme" id="change-theme" />
+         <!--INICIO MENU DE NAVEGAÇÃO-->
+        <input type="checkbox" name="change-theme" id="change-theme" /> <!--DARK MODE-->
             <label for="change-theme"  class="theme">
                 <i class="bi bi-sun"></i>
                 <i class="bi bi-moon"></i>
             </label>
         </div>
-        <!--Menu de navegação-->
         <div id="nav">
             <button id="btn-mobile">
                 <span id="hamburguer"></span>
@@ -46,10 +47,9 @@
                         </ul>
                 </div>
         </div>
-        <script src="script.js"></script>
+         <!--FIM MENU DE NAVEGAÇÃO-->
     </header>   
-        <!--Fim Menu de navegação-->
-        <!--Top do site-->
+
     <main>    
         <div class="head effect-head" >
             <div class="head-container">
@@ -85,7 +85,7 @@
            </div>
 
         </div>   
-
+        <!--INICIO SOBRE-->
         <div id="about" class="about">
 
             <div class="about-container">
@@ -99,20 +99,7 @@
                                     <div class="social-media-text">
                                         <p>Linkedin</p>
                                             <div class="link">
-                                                <a href="www.linkedin.com/in/lettycia-vitoria-4b9463301">conhecer meu perfil</a>
-                                            </div>
-                                    </div>
-                        </div>
-
-                        <div class="social-media insta">
-                            <div class="social-media-circles">
-                                <div class="social-circles"></div>
-                            </div>
-                                <i class="fa-brands fa-instagram"></i>
-                                    <div class="social-media-text">
-                                        <p>Instagram</p>
-                                            <div class="link">
-                                                <a href="www.linkedin.com/in/lettycia-vitoria-4b9463301">conhecer meu perfil</a>
+                                                <a href="https://www.linkedin.com/in/lettycia-vitoria/">conhecer meu perfil</a>
                                             </div>
                                     </div>
                         </div>
@@ -125,28 +112,42 @@
                                     <div class="social-media-text">
                                         <p>Github</p>
                                             <div class="link">
-                                                <a href="www.linkedin.com/in/lettycia-vitoria-4b9463301">conhecer meu perfil</a>
+                                                <a href="https://github.com/LettyciaDev">conhecer meu perfil</a>
+                                            </div>
+                                    </div>
+                        </div>
+
+                        <div class="social-media insta">
+                            <div class="social-media-circles">
+                                <div class="social-circles"></div>
+                            </div>
+                                <i class="fa-brands fa-instagram"></i>
+                                    <div class="social-media-text">
+                                        <p>Instagram</p>
+                                            <div class="link">
+                                                <a href="#">conhecer meu perfil</a>
                                             </div>
                                     </div>
                         </div>
                     </div>
 
-                    <div class="about-photo"><img src="" alt=""></div>
+                    <div class="about-photo"><img src="perfil.png" alt=""></div>
 
                     <div class="about-ttl">
                         <h1>SOBRE MIM</h1>
                     </div>
                     <div class="about-txt">
                         <div class="about-txt-container">
-                            <p>Me chamo Lettycia, tenho 18 anos, ingressei na área de tecnologia com o curso técnico de desenvolvimento de sistemas
-                               o qual me proporcionou várias experiências com o mundo da programção. No momento, estou concluindo o primeiro período
-                               em Ciências da computação na Universidade Católica de Pernambuco. Através deste portifólio, busco um estágio como 
+                            <p>Me chamo Lettycia, tenho 18 anos, ingressei na área de tecnologia com o curso técnico de desenvolvimento de sistemas,
+                               o qual me proporcionou várias experiências com o mundo da programção. No momento, estou no segundo período do
+                               curso de Ciências da computação na Universidade Católica de Pernambuco. Através deste portifólio, busco um estágio como 
                                front-end, detenho habilidades em python, html e css</p>
                         </div>
                     </div>
             </div>
         </div>
-
+        <!--FIM SOBRE-->
+        <!--INICIO HABILIDADES-->
         <div id="skills" class="skills">
             <div class="skills-container">
                 <div class="skill-title">
@@ -182,11 +183,11 @@
                 </div>
             </div>
         </div>
-
+        <!--FIM HABILIDADES-->
         <!--JavaScript-->
         <script src="script.js"></script>
         <!-------------->
-
+        <!--INICIO PROJETOS-->
         <div id="project" class="projects">
 
             <div class="projects-title">
@@ -200,7 +201,7 @@
                                     <h1>Projeto Educação</h1>
                                     <p>O site desenvolvido apresenta ferramentas de otimização no plano de estudo do usuário</p>
                                 </div>
-                                <div class="link-github"><i class="fa-brands fa-github"></i><a href="#">Code</a></div>
+                                <div class="link-github"><i class="fa-brands fa-github"></i><a href="https://github.com/LettyciaDev/GPCLASS">Code</a></div>
                             </div>
                             <div class="slide">
                                 <div class="slide-img"><img src="saude.png" alt=""></div>
@@ -208,7 +209,7 @@
                                     <h1>Projeto Saúde</h1>
                                     <p>Site de saúde que apresenta receitas saudáveis, exercícios físicos para serem praticados, além da calculadora IMC</p>
                                 </div>
-                                <div class="link-github"><i class="fa-brands fa-github"></i><a href="#">Code</a></div>
+                                <div class="link-github"><i class="fa-brands fa-github"></i><a href="https://github.com/LettyciaDev/projetoSaude">Code</a></div>
                             </div>
                             <div class="slide">
                                 <div class="slide-img"><img src="processin.png" alt=""></div>
@@ -245,7 +246,8 @@
                         </div>
                     </div>
             </div>
-
+        <!--FIM PROJETOS-->
+        <!--INICIO CONTATOS-->
         <div id="contact" class="contact">
             <div class="contact-container">
                 <h1 class="contact-title">Entre em contato.</h1>
@@ -264,8 +266,10 @@
                 </div>
             </div>
         </div>
+        <!--FIM CONTATOS-->
    </main>
    <footer>
+        <!--INICIO PÉ DO SITE -->
         <div class="footer">
             <div class="footer-container">
                 <div class="pagina-container">
@@ -289,6 +293,7 @@
                 </div>
             </div>
         </div>
+         <!--FIM PÉ DO SITE-->
    </footer>
 </body>
 </html>
