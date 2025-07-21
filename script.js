@@ -37,7 +37,7 @@ changeThemeBtn.addEventListener("change", function () {
 document.addEventListener('DOMContentLoaded', (event) => {
     const texts = [
       "Olá, me chamo Lettycia Vitória.",
-      "Sou front-end developer."
+      "Sou desenvolvedora de software."
     ];
   
     let textIndex = 0; // Índice atual do texto sendo digitado
